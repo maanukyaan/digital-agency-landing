@@ -1,0 +1,152 @@
+@import "reboot.min"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+// Variables
+$purple: #D11E8E
+
+html, body
+    height: 100%
+    width: 100%
+    min-height: 100%
+    min-width: 100%
+    margin: 0 !important
+    padding: 0 !important
+
+body
+    color: #fff
+    background: #151515
+    font-family: Montserrat
+
+header.header
+    position: relative
+    width: 100%
+    min-height: 100vh
+    height: 100vh
+    margin: 0
+    padding: 0
+    background: linear-gradient(rgba(19, 19, 19, 0.980), rgba(19, 19, 19, 0.980)), url("../img/header/background.jpg")
+    background-size: cover
+    background-position: center center
+
+    nav.nav
+        height: 100px
+        width: 100%
+        padding: 50px
+        margin: 0
+        display: flex
+        justify-content: space-between
+
+        .logo
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 250px
+
+        ul.header__ul
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li.header__li
+                margin: 0
+                padding: 0
+                a.header__li__link
+                    color: inherit
+                    text-decoration: none
+                    margin: 0 20px 0 0
+                    transition: color .3s ease
+                    &:hover
+                        color: $purple
+
+        .header__button
+            display: flex
+            justify-content: center
+            align-items: center
+            button
+                background: none
+                outline: none
+                border: 1px solid #f1f1f1
+                border-radius: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #fff
+                font-weight: bold
+                padding: 8px 35px
+
+    main
+        position: relative
+        z-index: 100
+        display: flex
+        flex-direction: column
+        padding: 50px
+
+        .header__main
+
+            &__h1
+                font-size: 80px
+                font-weight: bold
+                .purple
+                    color: $purple
+
+            &__h2
+                width: 40vw
+                font-size: 20px
+                margin: 30px 0 0 0
+                font-weight: 300
+
+            &__buttons-group
+                display: flex
+                padding: 30px 0
+                button
+                    background: none
+                    outline: none
+                    border: 1px solid #f1f1f1
+                    border-radius: 50px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #fff
+                    font-weight: bold
+                    padding: 13px 16px
+                    font-size: 15px
+
+                    &.header__main__cta-button
+                        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)),$purple
+                        color: #fff
+                        padding: 13px 60px
+                        border: none
+                        margin: 0 15px 0 0
+
+            &__partners
+                display: flex
+                flex-direction: column
+                padding-top: 20px
+
+                h3.header__main__h3
+                    font-size: 20px
+
+                ul.header__main__partners-list
+                    display: flex
+                    list-style-type: none
+                    margin: 0
+                    padding: 10px 0 0 0
+                    li.header__main__partners-list__item
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin: 0 25px 0 0
+                        img
+                            width: 100px
+                            fill: #fff
+    & > img
+        width: 50%
+        position: absolute
+        right: 0
+        bottom: 0
+        z-index: 10
